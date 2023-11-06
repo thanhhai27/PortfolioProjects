@@ -67,8 +67,7 @@ ORDER BY 2,3
 
 --Use CTE to perform Calculation on Partition By in previous query
 --Percentage of Population received at least one Covid_19 Vaccine
-WITH
-    POPVACC(continent, location, date, population, new_vaccinations, PeopleVaccinatedByDay)
+WITH POPVACC(continent, location, date, population, new_vaccinations, PeopleVaccinatedByDay)
     AS
     (
         SELECT dea.continent, dea.location, dea.date, dea.population, vac.new_vaccinations
